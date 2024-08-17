@@ -1,18 +1,30 @@
 //Задача 1
 import java.util.Scanner;
 public class Lesson_2_1 {
-   public static void main(String[] args) {
-         
+    /*public static void main(String[] args) {
+        double a = 5.0;
+        int b=2;
+        double c=b*a*(a+b)/(a*a);
+        System.out.println(c);
+    }*/ // (в данном случае ответ будет: 2.8)
+
+ /*public static void main(String[] args) {
+         int a = 5.0;
+         int b=2;
+         int c=b*a*(a+b)/(a*a);
+         System.out.println(c);
+     }*/ // (в данном случае ответ будет: 2)
+ public static void main(String[] args) {
+
   Scanner in = new Scanner(System.in);
   System.out.println("Input a number_1: ");
-  int a = in.nextInt();
+  double a = in.nextDouble();
   System.out.println("Input a number_2: ");
-  int b = in.nextInt();
-  int c = b * a * (a + b) / (a * a);
-  System.out.printf("Your number: %d \n", a);
-  System.out.printf("Your number: %d \n", b);
+  double b = in.nextDouble();
+  double c = b * a * (a + b) / (a * a);
+  System.out.printf("Your number: %f \n", a);
+  System.out.printf("Your number: %f \n", b);
   System.out.println("c= "+ c);
   in.close();
-
  }
 }
